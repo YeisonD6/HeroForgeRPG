@@ -38,7 +38,7 @@
 Clona el repositorio e instala las dependencias desde la raíz del proyecto:
 
 ```bash
-git clone <URL_DE_TU_REPOSITORIO_GITHUB>
+git clone https://github.com/YeisonD6/HeroForgeRPG.git
 cd HeroForgeRPG
 npm install
 ```
