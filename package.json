@@ -1,0 +1,47 @@
+{
+  "name": "heroforge-rpg",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/start-expo.js -c",
+    "android": "node scripts/start-expo.js --android",
+    "ios": "node scripts/start-expo.js --ios",
+    "web": "node scripts/start-expo.js --web",
+    "test": "jest --watchAll=false",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" App.tsx"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "expo": "~58.0.22",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-web": "~0.21.4",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@eslint/js": "^9.21.0",
+    "@expo/ngrok": "^4.1.3",
+    "@react-native/jest-preset": "0.88.1",
+    "@testing-library/react-native": "^13.2.0",
+    "@types/jest": "30.0.0",
+    "@types/react": "~19.3.0",
+    "eslint": "^9.21.0",
+    "jest": "~30.5.2",
+    "jest-expo": "~58.0.13",
+    "react-test-renderer": "19.3.0",
+    "test-renderer": "^1.3.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.25.0"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|react-redux|@reduxjs/toolkit|immer)"
+    ]
+  }
+}
